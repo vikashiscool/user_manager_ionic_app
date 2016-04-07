@@ -1,0 +1,18 @@
+<ion-view view-title="Users">
+  <ion-content>
+    <ion-list>
+      <!-- Use ng-repeat to iterate through all users in JSON. Assign href according to user.id -->
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="user in users" type="item-text-wrap" href="#/tab/users/{{user.id}}">
+        <h2>{{user.firstname}} {{user.lastname}}</h2>
+        <p>{{user.email}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <a ui-sref="tab.user-detail({userId: user.id})" class="button button-full button-calm">
+          User Details Page
+        </a>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
