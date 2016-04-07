@@ -8,6 +8,7 @@ To upload to Ionic View (on your phone), type the following in Terminal: `ionic 
 
 
 To install cordova plugins, type the following in terminal:
+
 `cordova plugin add cordova-plugin-camera`
 
 `cordova plugin add cordova-plugin-geolocation`
